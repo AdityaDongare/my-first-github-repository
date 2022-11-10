@@ -12,5 +12,4 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - - name: curl google
-        run: |
-          curl www.google.com
+        run: curl www.google.com
