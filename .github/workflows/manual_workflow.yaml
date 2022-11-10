@@ -7,5 +7,10 @@ jobs:
     steps:
       - name: Clone Repository
         uses: actions/checkout@v2
-      - name: ping test 
-        run: ping www.google.com
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
+      - run: echo "🍏 This job's status is ${{ job.status }}."
+      - - name: curl google
+        run: |
+          curl www.google.com
