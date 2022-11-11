@@ -9,3 +9,7 @@ jobs:
         uses: actions/checkout@v2
       - name: list dir
         run: ls
+      - name: Task 2
+        run: echo "This is task 2"
+      - name: Task 3
+        run: echo "This is Task 3"
